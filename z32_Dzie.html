@@ -1,0 +1,30 @@
+<html>
+<head>
+   <script type="text/javascript">
+      function pudelko(firma,nazwa,cena)//początek konstruktora
+      {
+      this.firma=firma;
+      this.nazwa=nazwa;
+      this.cena=cena;
+      }//koniec konstruktora
+
+      pudelko.prototype.wypisz = function () //definicja metody
+      {
+      alert(this.firma + ' ' + this.nazwa+ ' ' + this.cena);
+      };
+
+      var pudelko1 = new pudelko("IKEA", "KUGGIS", "10zl"); // nowy obiekt osoba1
+      var pudelko2 = new pudelko('CASTORAMA', 'One max', '9,98zl');
+      pudelko1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+      pudelko2.wypisz();
+      document.write("dostęp do właściwości"+"<br>");
+      // poniżej dostęp do pól osoby1
+      document.write("pudelko pierwszy"+" &nbsp;Firma: "+pudelko1.firma+" &nbsp;nazwa: "+pudelko1.nazwa+" &nbsp;cena: "+pudelko1.cena+"<br>");
+      document.write("pudelko drugi"+" &nbsp;Firma: "+pudelko2.firma+" &nbsp;nazwa: "+pudelko2.nazwa+" &nbsp;cena: "+pudelko2.cena);
+   </script>
+</head>
+<body>
+   <br>
+   programowanie obiektowe
+</body>
+</html>

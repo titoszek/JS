@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Tymon Dzieninis </title>
+</head>
+<body>
+    <ol>
+        <h1><li> Rodzaje „filozofii” programowania </li></h1>
+            <p><ol>
+                <li> Programowanie strukturalne </li>
+                <li> Programowanie obiektowe </li>
+            </ol></p>
+        <h1><li> Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego </li></h1>
+            <p> paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli </p>
+            <ol>
+                <li> Podzielone bloki kodu mają jeden punkt wejścia (mogą mieć wiele punktów wyjścia) </li>
+                <li> Wykonywanie wyrażeń w określonej kolejności </li>
+                <li> Używanie instrukcji warunkowych (if, if  else) </li>
+                <li> Używanie pętli (for, while, do while) </li>
+                <li> Unikanie instrukcji skoku (goto) </li>
+                <li> Unikanie instrukcji break, continue </li>
+                <li> W programowaniu proceduralnym(strukturalne) funkcje i zmienne opisujące dany przedmiot nie są ze sobą powiązane </li>
+            </ol>
+        <h1><li> Programowanie obiektowe:definicja(angielski skrót, obiekty, stan, zachowanie, końcowa konkluzja czym jest programowanie obiektowe) </li></h1>
+            <p> Programowanie obiektowe jest to podejście bardziej naturalne dla ludzi, bardziej zgodne z rzeczywistością. W pamięci komputera tworzona jest wirtualna rzeczywistość. Definiowane (powoływane sądo wirtualnego życia w pamięci komputera)obiektyna podstawie wcześniejzdefiniowanych klas. Obiekty mają zdefiniowane metodyoraz pola. <br>
+            Programowanie obiektowe (ang. object-oriented programming) —sposób programowania, w którym programy definiuje się za pomocą:
+                <ol>
+                    <li> obiektów(obiekty powoływane są do życia wirtualnego przez programistę, mogą być kasowane przez programistę) np. okienka w Windows okienko jest obiektem </li>
+                    <li> obiekt ma jakiś stan(czyli dane, w programowaniu obiektowym nazywane najczęściej polami) np. wielość okienka w Windows </li>
+                    <li> obiekt wykazuje pewne zachowanie(czyli posiada pewne procedury w programowaniu obiektowym nazywane metody). Np. jest zdefiniowana metoda do zmiany wielkości okienka </li>
+                </ol>
+            </p>
+        <h1><li> Dlaczego stosujemy programowanie obiektowe </li></h1>
+            <p>
+                <ol>
+                    <li> Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowydokonujemy pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. Definiujemy pola czyli  jego stan np. rok produkcji, marka, kolor. Definiujemy również metody czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej </li>
+                    <li> Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ gdy obiekt staje się zbędny możemy go usunąć co zwolni pamięćzajmowaną przez ten obiekt. W programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka </li>
+                    <li> W  programowaniu  obiektowym  dobrze napisanai  przetestowana  klasa  pozwala  na  stosowaniu przez innych programistów. Zaoszczędza to czas i środki pieniężne </li>
+                </ol>
+            </p>
+        <h1><li> Omów następujące pojęcia </li></h1>
+        </h1>
+        <ul>
+            <h3><li> Klasa </li></h3>
+                <p> Klasa rodzaj foremki, która opisuje nam jak będą wyglądać tworzone na jej podstawie nowe obiekty. Klasa jest to złożony typ będący opisem (definicją) obiektu/obiektów wraz z definicją pól i metod obiektów </p>
+            <h3><li> Obiekt </li></h3>
+                <p> Instancja (byt, twór) który powstał na podstawie klasy.Czyli Obiektysą konstrukcjami programistycznymi mającymi tak zwane właściwości (inaczej pola obiektu),którymi mogą być zmiennelub inne obiekty. Z obiektami powiązane są funkcjewykonujące operacje na ich właściwościach, nazywane metodami </p>
+            <h3><li> Właściwość </li></h3>
+                <p> Własność obiektu, np. kolor </p>
+            <h3><li> Metoda </li></h3>
+                <p> Zdolność (czynność) którą umie wykonywać obiekt, np. chodzenie (idź).Realizowane w postaci konstrukcji podobnej do funkcji </p>
+            <h3><li> Konstruktor </li></h3>
+                <p> Metoda wywoływana w momencie inicjalizacji obiektu.np. tworzymy obiekt a wraz z tworzeniem obiektu uruchomi się metoda, która nada np. Imię i Nazwisko </p>
+            <h3><li> Destruktor </li></h3>
+                <p> jest wywoływany automatycznie podczas niszczenia obiektów. Nie przyjmuje żadnych argumentów.  W przeciwieństwie do konstruktorów, w klasie może być tylko jeden destruktor </p>
+            <h3><li> Dziedziczenie </li></h3>
+                <p> Klasa może dziedziczyć własności od innej klasy.Tworzymy klasę na podstawie innej klasy pobierając od „rodzica” właściwości i metody, może dopisać nowe pola i nowe metody </p>
+            <h3><li> Hermetyzacja </li></h3>
+                <p> Wewnątrz ciała klasy znajdują się pola i metody. Część pól i metod można odpowiednio ukryć przed "zewnętrznym światem" klasy tak jak to ma miejsce z przedmiotami ze świata rzeczywistego </p>
+            <h3><li> Polimorfizm </li></h3>
+                <p> Polimorfizm czyli wielopastaciowość. Oznacza to, że dany obiekt może zmieniać swoją postać w zależności od potrzeb. Może to być realizowane w formiemetody wywoływanej z różną ilością parametrów. Tak więc utorzony obiekt może być traktowany polimorficznie bo zachowuje się różnie w zależności od sposobu uruchamiania jego metody </p>
+        </ul>
+        
+    </ol>
+</body>
+</html>
